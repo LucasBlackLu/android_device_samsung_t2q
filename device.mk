@@ -18,6 +18,13 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
 
+# WiFi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi-service \
+    hostapd \
+    wpa_supplicant \
+    wpa_supplicant.conf
+
 # Inherit from common
 $(call inherit-product, device/samsung/sm8350-common/common.mk)
 
