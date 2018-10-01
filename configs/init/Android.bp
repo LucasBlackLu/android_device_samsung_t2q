@@ -1,0 +1,13 @@
+prebuilt_etc {
+    name: "wifi_brcm.rc",
+    src: "etc/init/wifi_brcm.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "wifi_sec.rc",
+    src: "etc/init/wifi_sec.rc",
+    sub_dir: "init",
+    vendor: true,
+}
