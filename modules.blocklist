@@ -112,3 +112,6 @@ blocklist sec_cmd_test.ko
 blocklist sec_battery_vote_test.ko
 blocklist usb_typec_manager_notifier_test.ko
 blocklist snd_soc_cs35l41_test.ko
+# The module will be loaded from the target RC after
+# cold boot calibration.
+blocklist qca_cld3_wlan
