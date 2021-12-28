@@ -26,8 +26,6 @@ BOARD_NAME                  := SRPUE26A001
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
 
 # Recovery
-TARGET_PREBUILT_RECOVERY_KERNEL := $(DEVICE_PATH)/recovery/prebuilt/Image
-BOARD_RECOVERY_MKBOOTIMG_ARGS += --dtb $(DEVICE_PATH)/recovery/prebuilt/dtb.img
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
 # Display
