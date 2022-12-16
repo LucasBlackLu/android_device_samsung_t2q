@@ -22,7 +22,7 @@ vendor/etc/audconf/OPEN/Handset_cal.acdb
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/camera.unihal.default.so
 vendor/lib/hw/com.qti.chi.override.so
-vendor/lib64/hw/camera.qcom.so
+vendor/lib64/hw/camera.qcom.so|f077982efc43229bd837abf513d44a81fcddc351
 vendor/lib64/hw/camera.unihal.default.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib/camera/com.samsung.sensormodule.1_0_lsi_s5kgd2.bin
