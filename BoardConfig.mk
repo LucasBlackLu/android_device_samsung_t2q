@@ -20,7 +20,7 @@ include device/samsung/sm7325-common/BoardConfigCommon.mk
 
 # Kernel
 TARGET_KERNEL_CONFIG        := vendor/lineage-a52sxq_defconfig
-BOARD_NAME                  := SRPUE26A002
+BOARD_NAME                  := SRPUE26A001
 
 # Display
 TARGET_SCREEN_DENSITY := 450
