@@ -22,6 +22,10 @@ include device/samsung/sm7325-common/BoardConfigCommon.mk
 TARGET_KERNEL_CONFIG        := vendor/lineage-a52sxq_defconfig
 BOARD_NAME                  := SRPUE26A001
 
+# Recovery
+TARGET_PREBUILT_RECOVERY_KERNEL := $(DEVICE_PATH)/recovery/prebuilt/Image
+BOARD_RECOVERY_MKBOOTIMG_ARGS += --dtb $(DEVICE_PATH)/recovery/prebuilt/dtb.img
+
 # Display
 TARGET_SCREEN_DENSITY := 450
 
