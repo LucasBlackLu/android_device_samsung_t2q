@@ -256,7 +256,7 @@ vendor/lib/com.qti.feature2.swmf.so
 vendor/lib64/com.qti.feature2.swmf.so
 vendor/lib/libhypermotion_core.so
 vendor/lib64/libhypermotion_core.so
-vvendor/lib/libsec2qc_conversion.so
+vendor/lib/libsec2qc_conversion.so
 vendor/lib64/libsec2qc_conversion.so
 vendor/lib/libdualcam_refocus_image.so
 vendor/lib64/libdualcam_refocus_image.so
