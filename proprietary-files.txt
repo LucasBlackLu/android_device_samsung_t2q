@@ -30,7 +30,7 @@ vendor/firmware/bt_nvm_loading.xml
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.qti.chi.override.so
 vendor/lib64/hw/camera.qcom.so|f077982efc43229bd837abf513d44a81fcddc351
-vendor/lib64/hw/com.qti.chi.override.so
+vendor/lib64/hw/com.qti.chi.override.so|81ce54bbe660e3f703ea36a6dc940bbb11498646
 vendor/lib/camera/com.samsung.sensormodule.1_0_lsi_s5kgd2.bin
 vendor/lib/camera/com.samsung.tuned.lsi_s5k3l6.bin
 vendor/lib/camera/com.samsung.sensormodule.13_0_lsi_s5kgd2_full.bin
