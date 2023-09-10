@@ -319,6 +319,13 @@ vendor/firmware/yupik_ipa_fws.b04|7aa0ec649f20af523f21c6e19014987f86f18dff
 vendor/firmware/yupik_ipa_fws.elf|4a3b639766031f2f34bca1d3ad2cca032e907321
 vendor/firmware/yupik_ipa_fws.mdt|e9315fc6e25079cf3dca7dd4000da4ff13e170ef
 
+# Wifi firmware (bootloader revision 1) - from A528NKSS1DWA1 (T)
+vendor/firmware/ipa/a528n/rev1/wpss.b01|b9dcd9ce2fa81563f9f93ed3b5cf414cf640a6b7
+vendor/firmware/ipa/a528n/rev1/wpss.mdt|20dbdadc5304730938e1ac127e9a9b2e0ba5e032
+vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.b01|08f2e62a973ada4057e1618c979ad5843271104b
+vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.elf|1ae24574c762eb22aeccf6a9e859b6c10d658440
+vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.mdt|1fb12c89374970d6aeee5eda9cfe6f254c18576a
+
 # Wifi firmware (bootloader revision 2) - from A528BXXU2EWC1 (T)
 vendor/firmware/ipa/a528b/rev2/wpss.b00|ec9771fe39350cc2ff27c36e5fdb7f8f0ca4aeb3
 vendor/firmware/ipa/a528b/rev2/wpss.b01|3b5c6e0b4ded8456999a4fb03fd0c60fc0b067ce
@@ -329,100 +336,41 @@ vendor/firmware/ipa/a528b/rev2/wpss.b05|4921bc0a7acc43180097eeba29a8e21bbf6270cc
 vendor/firmware/ipa/a528b/rev2/wpss.b06|aa2cdff7b662830ecc28261eb963ea5d78a06842
 vendor/firmware/ipa/a528b/rev2/wpss.b07|ccd078161284175e6ea66ba1314e79707894ea84
 vendor/firmware/ipa/a528b/rev2/wpss.mdt|955e96de1082c77a0c28d8660f5e8c10a394b6b3
-vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.b00|a43669e4c8ad4af399b829c7986651bef2fd058a
 vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.b01|a171326556f5aabafd7ed422618d5d065eb74a0a
-vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.b02|c0f5259e45f67f322459e7afde30cba608b9ea5f
-vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
-vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.b04|7aa0ec649f20af523f21c6e19014987f86f18dff
 vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.elf|0d1966de4079e865815ff8873da8456ebf6a5299
 vendor/firmware/ipa/a528b/rev2/yupik_ipa_fws.mdt|962e47dad49936356c4bc0f46e197d7e2b946d65
 
 # Wifi firmware (bootloader revision 3) - from A528BXXU3EWC6 (T)
-vendor/firmware/ipa/a528b/rev3/wpss.b00|ec9771fe39350cc2ff27c36e5fdb7f8f0ca4aeb3
 vendor/firmware/ipa/a528b/rev3/wpss.b01|1dc2cfa9983acea0c06b761d64b77cbe9baee4ca
-vendor/firmware/ipa/a528b/rev3/wpss.b02|1d01914176991452ba141f762ab9b7b32774ab9e
-vendor/firmware/ipa/a528b/rev3/wpss.b03|ac543c537d6779ca5ba08bb6c01fea1aca9d5053
-vendor/firmware/ipa/a528b/rev3/wpss.b04|6cf9481034d98db6d5e2d283f24f7f69f62a4cd9
-vendor/firmware/ipa/a528b/rev3/wpss.b05|4921bc0a7acc43180097eeba29a8e21bbf6270cc
-vendor/firmware/ipa/a528b/rev3/wpss.b06|aa2cdff7b662830ecc28261eb963ea5d78a06842
-vendor/firmware/ipa/a528b/rev3/wpss.b07|ccd078161284175e6ea66ba1314e79707894ea84
 vendor/firmware/ipa/a528b/rev3/wpss.mdt|d131a35f69dc2a780fa468c2b378bd187ecba2d8
-vendor/firmware/ipa/a528b/rev3/yupik_ipa_fws.b00|a43669e4c8ad4af399b829c7986651bef2fd058a
 vendor/firmware/ipa/a528b/rev3/yupik_ipa_fws.b01|18603ccdbfe8cdd808be57ee7dd1dbbaf496c0e9
-vendor/firmware/ipa/a528b/rev3/yupik_ipa_fws.b02|c0f5259e45f67f322459e7afde30cba608b9ea5f
-vendor/firmware/ipa/a528b/rev3/yupik_ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
-vendor/firmware/ipa/a528b/rev3/yupik_ipa_fws.b04|7aa0ec649f20af523f21c6e19014987f86f18dff
 vendor/firmware/ipa/a528b/rev3/yupik_ipa_fws.elf|da1b0d1b561b64355eee72e2bc11415b0366a49a
 vendor/firmware/ipa/a528b/rev3/yupik_ipa_fws.mdt|c394b8d9da290fdb004c2689ee9af726270fbec8
 
 # Wifi firmware (bootloader revision 4) - from A528BXXS4EWE5 (T)
-vendor/firmware/ipa/a528b/rev4/wpss.b00|ec9771fe39350cc2ff27c36e5fdb7f8f0ca4aeb3
 vendor/firmware/ipa/a528b/rev4/wpss.b01|fc33353016da2b398177529eae250c25c5621b08
-vendor/firmware/ipa/a528b/rev4/wpss.b02|1d01914176991452ba141f762ab9b7b32774ab9e
-vendor/firmware/ipa/a528b/rev4/wpss.b03|ac543c537d6779ca5ba08bb6c01fea1aca9d5053
-vendor/firmware/ipa/a528b/rev4/wpss.b04|6cf9481034d98db6d5e2d283f24f7f69f62a4cd9
-vendor/firmware/ipa/a528b/rev4/wpss.b05|4921bc0a7acc43180097eeba29a8e21bbf6270cc
-vendor/firmware/ipa/a528b/rev4/wpss.b06|aa2cdff7b662830ecc28261eb963ea5d78a06842
-vendor/firmware/ipa/a528b/rev4/wpss.b07|ccd078161284175e6ea66ba1314e79707894ea84
 vendor/firmware/ipa/a528b/rev4/wpss.mdt|b6e759833f00852e8e4ab93cc59b854eef19c529
-vendor/firmware/ipa/a528b/rev4/yupik_ipa_fws.b00|a43669e4c8ad4af399b829c7986651bef2fd058a
 vendor/firmware/ipa/a528b/rev4/yupik_ipa_fws.b01|7209151e556e6811e206c70dc2cc4caa35a9ad45
-vendor/firmware/ipa/a528b/rev4/yupik_ipa_fws.b02|c0f5259e45f67f322459e7afde30cba608b9ea5f
-vendor/firmware/ipa/a528b/rev4/yupik_ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
-vendor/firmware/ipa/a528b/rev4/yupik_ipa_fws.b04|7aa0ec649f20af523f21c6e19014987f86f18dff
 vendor/firmware/ipa/a528b/rev4/yupik_ipa_fws.elf|22d0f527483f9f7f71bab32ea4d938696208c03e
 vendor/firmware/ipa/a528b/rev4/yupik_ipa_fws.mdt|7ce45d84f27e86aeeb521b464d3eae00ded089a1
 
-# Wifi firmware (bootloader revision 5) - from A528BXXS5EWH4 (T)
-vendor/firmware/ipa/a528b/rev4/wpss.b00|6e49240887c3130b534baa1fac897a797f895b15
-vendor/firmware/ipa/a528b/rev4/wpss.b01|517c1ea120c08ce61359d8a0de76d8047004702c
-vendor/firmware/ipa/a528b/rev4/wpss.b02|4454971055ff504f84cf2f953aeab17af9818fcb
-vendor/firmware/ipa/a528b/rev4/wpss.b03|bbaec8a5d9a417b666c97b36fd00ed307f9ee191
-vendor/firmware/ipa/a528b/rev4/wpss.b04|31805d7a4d43d5f5bdbc6de0d81729885e1c6b1d
-vendor/firmware/ipa/a528b/rev4/wpss.b05|1a7a508c2d447ab3ac122a4e9c08ac41ce204a97
-vendor/firmware/ipa/a528b/rev4/wpss.b06|5a8550f4952ac9ffa8d10280a70e92770a1d41a6
-vendor/firmware/ipa/a528b/rev4/wpss.b07|ca58a5af6afcd88b0acca60d9c1da7e994b4e8a8
-vendor/firmware/ipa/a528b/rev4/wpss.mdt|b217d9f3c9df4d75bd0ffcba2d25062090dd4463
-vendor/firmware/ipa/a528b/rev4/yupik_ipa_fws.b00|a43669e4c8ad4af399b829c7986651bef2fd058a
-vendor/firmware/ipa/a528b/rev4/yupik_ipa_fws.b01|7fa5cdae715f7938928a10464f7fb748dd51e09e
-vendor/firmware/ipa/a528b/rev4/yupik_ipa_fws.b02|c0f5259e45f67f322459e7afde30cba608b9ea5f
-vendor/firmware/ipa/a528b/rev4/yupik_ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
-vendor/firmware/ipa/a528b/rev4/yupik_ipa_fws.b04|7aa0ec649f20af523f21c6e19014987f86f18dff
-vendor/firmware/ipa/a528b/rev4/yupik_ipa_fws.elf|1a0a29c221f8c9bab85de32f44e78e7e1fc12350
-vendor/firmware/ipa/a528b/rev4/yupik_ipa_fws.mdt|63ea5fd81e20c9b0105d6cde6ed1e95405e24c6e
-
-# Wifi firmware (bootloader revision 1) - from A528NKSS1DWA1 (T)
-vendor/firmware/ipa/a528n/rev1/wpss.b00|bbbf98507f63f2fbc6f04ed5328d88190de9f124
-vendor/firmware/ipa/a528n/rev1/wpss.b01|b9dcd9ce2fa81563f9f93ed3b5cf414cf640a6b7
-vendor/firmware/ipa/a528n/rev1/wpss.b02|01a62a6929ca782d3216a159ecfba873ccb1aa2d
-vendor/firmware/ipa/a528n/rev1/wpss.b03|662486b7c0a931f1265d0f3ca942a854943ca974
-vendor/firmware/ipa/a528n/rev1/wpss.b04|6b4e5aecb98ce669a09638db698e66a255775a8f
-vendor/firmware/ipa/a528n/rev1/wpss.b05|de0fa830b6bbf388f63b36c3b18d47d92711764e
-vendor/firmware/ipa/a528n/rev1/wpss.b06|4a527ed4dfc2be3a12cfa5c6f6cff5513bfe34d7
-vendor/firmware/ipa/a528n/rev1/wpss.b07|3413d463c82e90fe1ef15c8dc65502050265ca31
-vendor/firmware/ipa/a528n/rev1/wpss.mdt|20dbdadc5304730938e1ac127e9a9b2e0ba5e032
-vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.b00|a43669e4c8ad4af399b829c7986651bef2fd058a
-vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.b01|08f2e62a973ada4057e1618c979ad5843271104b
-vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.b02|c0f5259e45f67f322459e7afde30cba608b9ea5f
-vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
-vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.b04|7aa0ec649f20af523f21c6e19014987f86f18dff
-vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.elf|1ae24574c762eb22aeccf6a9e859b6c10d658440
-vendor/firmware/ipa/a528n/rev1/yupik_ipa_fws.mdt|1fb12c89374970d6aeee5eda9cfe6f254c18576a
-
 # Wifi firmware (bootloader revision 2) - from A528NKSU2EWB4 (T)
-vendor/firmware/ipa/a528n/rev2/wpss.b00|ec9771fe39350cc2ff27c36e5fdb7f8f0ca4aeb3
 vendor/firmware/ipa/a528n/rev2/wpss.b01|32cb22661c41b72a598f04be119e99890b09af0c
-vendor/firmware/ipa/a528n/rev2/wpss.b02|1d01914176991452ba141f762ab9b7b32774ab9e
-vendor/firmware/ipa/a528n/rev2/wpss.b03|ac543c537d6779ca5ba08bb6c01fea1aca9d5053
-vendor/firmware/ipa/a528n/rev2/wpss.b04|6cf9481034d98db6d5e2d283f24f7f69f62a4cd9
-vendor/firmware/ipa/a528n/rev2/wpss.b05|4921bc0a7acc43180097eeba29a8e21bbf6270cc
-vendor/firmware/ipa/a528n/rev2/wpss.b06|aa2cdff7b662830ecc28261eb963ea5d78a06842
-vendor/firmware/ipa/a528n/rev2/wpss.b07|ccd078161284175e6ea66ba1314e79707894ea84
 vendor/firmware/ipa/a528n/rev2/wpss.mdt|10dce042a9c55e6ea5c21a554f2fac10d06286b1
-vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.b00|a43669e4c8ad4af399b829c7986651bef2fd058a
 vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.b01|0d7c3c014554c8f2b5bd180bf82ebc4c5e1c1dc0
-vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.b02|c0f5259e45f67f322459e7afde30cba608b9ea5f
-vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
-vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.b04|7aa0ec649f20af523f21c6e19014987f86f18dff
 vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.elf|739fe23c0ef6992158805d0acf5471a007bda230
 vendor/firmware/ipa/a528n/rev2/yupik_ipa_fws.mdt|0a4ecb54bf6583615e265357cbce6df48e9f1990
+
+# Wifi firmware (bootloader revision 5) - from A528BXXS5EWH4 (T)
+vendor/firmware/ipa/a528b/rev5/wpss.b00|6e49240887c3130b534baa1fac897a797f895b15
+vendor/firmware/ipa/a528b/rev5/wpss.b01|517c1ea120c08ce61359d8a0de76d8047004702c
+vendor/firmware/ipa/a528b/rev5/wpss.b02|4454971055ff504f84cf2f953aeab17af9818fcb
+vendor/firmware/ipa/a528b/rev5/wpss.b03|bbaec8a5d9a417b666c97b36fd00ed307f9ee191
+vendor/firmware/ipa/a528b/rev5/wpss.b04|31805d7a4d43d5f5bdbc6de0d81729885e1c6b1d
+vendor/firmware/ipa/a528b/rev5/wpss.b05|1a7a508c2d447ab3ac122a4e9c08ac41ce204a97
+vendor/firmware/ipa/a528b/rev5/wpss.b06|5a8550f4952ac9ffa8d10280a70e92770a1d41a6
+vendor/firmware/ipa/a528b/rev5/wpss.b07|ca58a5af6afcd88b0acca60d9c1da7e994b4e8a8
+vendor/firmware/ipa/a528b/rev5/wpss.mdt|b217d9f3c9df4d75bd0ffcba2d25062090dd4463
+vendor/firmware/ipa/a528b/rev5/yupik_ipa_fws.b01|7fa5cdae715f7938928a10464f7fb748dd51e09e
+vendor/firmware/ipa/a528b/rev5/yupik_ipa_fws.elf|1a0a29c221f8c9bab85de32f44e78e7e1fc12350
+vendor/firmware/ipa/a528b/rev5/yupik_ipa_fws.mdt|63ea5fd81e20c9b0105d6cde6ed1e95405e24c6e
