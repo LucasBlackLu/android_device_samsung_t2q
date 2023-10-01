@@ -67,11 +67,8 @@ on boot
     chmod 0664 /sys/class/usb_notify/usb_control/usb_data_enabled
 
 on post-fs-data
-# Samsung Pay
-    mkdir /efs/pfw_data 0760 vendor_spay vendor_spay
-
 # MST/NFC Switch
-    chown vendor_spay system /dev/mst_ctrl
+    chown system /dev/mst_ctrl
     chmod 0660 /dev/mst_ctrl
 
 # Create carrier folder for HiddenMenu
