@@ -33,6 +33,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# NFC
+TARGET_HAVE_SEC_NFC := true
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := lineage_a52sxq
 PRODUCT_DEVICE := a52sxq
