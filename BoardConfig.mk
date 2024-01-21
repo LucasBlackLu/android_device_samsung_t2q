@@ -25,6 +25,9 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2025-04-01
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Wi-Fi
 BOARD_WLAN_BCMDHD_SAE                         := true
 BOARD_WLAN_DEVICE                             := bcmdhd
