@@ -1,0 +1,4 @@
+# Fingerprint
+ro.vendor.fingerprint.type=udfps
+ro.vendor.fingerprint.sensor_location=540|1805|114
+ro.vendor.fingerprint.force_calibrate=true
