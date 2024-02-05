@@ -1,4 +1,4 @@
-# All blobs are from A528BXXU2EWC1 (T), unless pinned
+# All blobs are from G990BXXS6FWL5 (U), unless pinned
 
 # Audio
 vendor/lib/hw/audio.primary.lahaina.so
@@ -6,39 +6,59 @@ vendor/lib/libspeakercalibration.so
 vendor/firmware/dax_param.bin
 
 # ACDB
-vendor/etc/audconf/ODM/Global_cal.acdb
-vendor/etc/audconf/ODM/Bluetooth_cal.acdb
-vendor/etc/audconf/ODM/Headset_cal.acdb
-vendor/etc/audconf/ODM/General_cal.acdb
-vendor/etc/audconf/ODM/workspaceFile.qwsp
-vendor/etc/audconf/ODM/Speaker_cal.acdb
-vendor/etc/audconf/ODM/Hdmi_cal.acdb
-vendor/etc/audconf/ODM/Handset_cal.acdb
-vendor/etc/audconf/OPEN/Global_cal.acdb
+vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/audconf/OPEN/Bluetooth_cal.acdb
-vendor/etc/audconf/OPEN/Headset_cal.acdb
 vendor/etc/audconf/OPEN/General_cal.acdb
-vendor/etc/audconf/OPEN/workspaceFile.qwsp
-vendor/etc/audconf/OPEN/Speaker_cal.acdb
-vendor/etc/audconf/OPEN/Hdmi_cal.acdb
+vendor/etc/audconf/OPEN/Global_cal.acdb
 vendor/etc/audconf/OPEN/Handset_cal.acdb
+vendor/etc/audconf/OPEN/Hdmi_cal.acdb
+vendor/etc/audconf/OPEN/Headset_cal.acdb
+vendor/etc/audconf/OPEN/Speaker_cal.acdb
+vendor/etc/audconf/OPEN/workspaceFile.qwsp
 
-# Bluetooth firmware
-vendor/firmware/bt_nvm_loading.xml
+## Bluetooth Firmware
+vendor/firmware/bcm4375B1_murata.hcd
+vendor/firmware/bcm4375B1_semco_sem.hcd
 
 # Camera
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.qti.chi.override.so
-vendor/lib64/hw/camera.qcom.so|f077982efc43229bd837abf513d44a81fcddc351
-vendor/lib64/hw/com.qti.chi.override.so|81ce54bbe660e3f703ea36a6dc940bbb11498646
-vendor/lib/camera/com.samsung.sensormodule.1_0_lsi_s5kgd2.bin
-vendor/lib/camera/com.samsung.tuned.lsi_s5k3l6.bin
-vendor/lib/camera/com.samsung.sensormodule.13_0_lsi_s5kgd2_full.bin
-vendor/lib/camera/com.qti.eeprom.truly_cmb433.so
-vendor/lib/camera/com.qti.eeprom.irs2381c_polar.so
-vendor/lib/camera/com.samsung.sensormodule.2_lsi_s5k3l6.bin
-vendor/lib/camera/com.samsung.sensor.s5kgd2.so
-vendor/lib/camera/com.samsung.sensor.gc5035.so
+vendor/lib64/hw/camera.qcom.so
+vendor/lib64/hw/com.qti.chi.override.so
+vendor/lib/camera/com.samsung.sensor.hi1336c.so
+vendor/lib/camera/com.samsung.sensor.hi1337.so
+vendor/lib/camera/com.samsung.sensor.hi847.so
+vendor/lib/camera/com.samsung.sensor.imx258.so
+vendor/lib/camera/com.samsung.sensor.imx374.so
+vendor/lib/camera/com.samsung.sensor.imx471.so
+vendor/lib/camera/com.samsung.sensor.imx555.so
+vendor/lib/camera/com.samsung.sensor.imx563.so
+vendor/lib/camera/com.samsung.sensor.imx616.so
+vendor/lib/camera/com.samsung.sensor.s5k2la.so
+vendor/lib/camera/com.samsung.sensor.s5k2ld.so
+vendor/lib/camera/com.samsung.sensor.s5k3j1.so
+vendor/lib/camera/com.samsung.sensor.s5k3l6.so
+vendor/lib/camera/com.samsung.sensor.s5k3m5.so
+vendor/lib/camera/com.samsung.sensor.s5kgh1.so
+vendor/lib/camera/com.samsung.sensor.s5kgw2.so
+vendor/lib/camera/com.samsung.sensor.s5khm1.so
+vendor/lib/camera/com.samsung.sensor.s5khm3.so
+vendor/lib/camera/com.samsung.sensormodule.0_lsi_s5k2ld.bin
+vendor/lib/camera/com.samsung.sensormodule.0_sony_imx555_hwid06.bin
+vendor/lib/camera/com.samsung.sensormodule.0_sony_imx555_hwid07.bin
+vendor/lib/camera/com.samsung.sensormodule.12_sony_imx616_full.bin
+vendor/lib/camera/com.samsung.sensormodule.1_sony_imx616.bin
+vendor/lib/camera/com.samsung.sensormodule.2_hynix_hi1336c.bin
+vendor/lib/camera/com.samsung.sensormodule.2_sony_imx258_hwid06.bin
+vendor/lib/camera/com.samsung.sensormodule.2_sony_imx258_hwid07.bin
+vendor/lib/camera/com.samsung.sensormodule.3_hynix_hi847_hwid06.bin
+vendor/lib/camera/com.samsung.sensormodule.3_hynix_hi847_hwid07.bin
+vendor/lib/camera/com.samsung.tuned.hynix_hi1336c.bin
+vendor/lib/camera/com.samsung.tuned.hynix_hi847.bin
+vendor/lib/camera/com.samsung.tuned.lsi_s5k2ld.bin
+vendor/lib/camera/com.samsung.tuned.sony_imx258.bin
+vendor/lib/camera/com.samsung.tuned.sony_imx555.bin
+vendor/lib/camera/com.samsung.tuned.sony_imx616.bin
 vendor/lib/camera/components/com.qti.stats.pdlibsony.so
 vendor/lib/camera/components/com.samsung.node.uniplugin_vdis.so
 vendor/lib/camera/components/com.qti.node.swlsc.so
@@ -65,15 +85,12 @@ vendor/lib/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib/camera/components/com.qti.node.swaidenoiser.so
 vendor/lib/camera/components/com.qti.stats.afwrapper.so
 vendor/lib/camera/components/com.ss.stats.aec.so
-vendor/lib/camera/components/com.ss.stats.pdlib.so
 vendor/lib/camera/components/com.qti.node.stich.so
 vendor/lib/camera/components/com.samsung.node.capture_fusion.so
-vendor/lib/camera/components/com.qtistatic.stats.pdlib.so
 vendor/lib/camera/components/com.qti.node.sbi.so
 vendor/lib/camera/components/com.samsung.node.smooth_transition.so
 vendor/lib/camera/components/com.qti.stats.afd.so
 vendor/lib/camera/components/com.qti.node.swpreprocess.so
-vendor/lib/camera/components/com.qti.stats.hafoverride.so
 vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
 vendor/lib/camera/components/com.qti.hvx.addconstant.so
 vendor/lib/camera/components/com.qti.node.dummysat.so
@@ -81,7 +98,6 @@ vendor/lib/camera/components/com.qti.node.memcpy.so
 vendor/lib/camera/components/com.qti.stats.awbwrapper.so
 vendor/lib/camera/components/com.qti.node.swcac.so
 vendor/lib/camera/components/com.qti.node.dummyrtb.so
-vendor/lib/camera/components/com.qtistatic.stats.af.so
 vendor/lib/camera/components/com.qti.eisv3.so
 vendor/lib/camera/components/com.qti.node.swmfnr.so
 vendor/lib/camera/components/com.samsung.node.uniplugin_capture.so
@@ -90,40 +106,13 @@ vendor/lib/camera/components/com.ss.stats.awb.so
 vendor/lib/camera/components/com.samsung.node.uniplugin_recording.so
 vendor/lib/camera/components/com.samsung.node.uniplugin_preview.so
 vendor/lib/camera/components/com.qti.node.gpu.so
-vendor/lib/camera/com.samsung.tuned.lsi_gc5035.bin
-vendor/lib/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin
-vendor/lib/camera/com.samsung.sensor.s5kgw1p.so
-vendor/lib/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1p_otp.bin
-vendor/lib/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1p.bin
-vendor/lib/camera/com.samsung.sensor.gc5035_macro.so
-vendor/lib/camera/com.samsung.sensormodule.0_1_sony_imx682.bin
-vendor/lib/camera/com.samsung.sensormodule.1_1_sony_imx616.bin
-vendor/lib/camera/com.samsung.tuned.lsi_s5kgd2.bin
-vendor/lib/camera/com.samsung.sensormodule.13_0_lsi_s5kgd2_full_otp.bin
-vendor/lib/camera/com.samsung.sensormodule.3_lsi_gc5035.bin
-vendor/lib/camera/com.samsung.sensor.s5k3l6.so
-vendor/lib/camera/com.samsung.sensormodule.13_1_sony_imx616_full.bin
-vendor/lib/camera/com.qti.tuned.default.bin
-vendor/lib/camera/com.samsung.sensormodule.1_0_lsi_s5kgd2_otp.bin
-vendor/lib/camera/com.samsung.tuned.sony_imx616.bin
-vendor/lib/camera/com.samsung.tuned.lsi_gc5035_macro.bin
-vendor/lib/camera/com.samsung.sensor.imx682.so
-vendor/lib/camera/com.samsung.tuned.sony_imx682.bin
-vendor/lib/camera/com.samsung.tuned.lsi_s5kgw1p.bin
-vendor/lib/camera/com.qti.eeprom.n24s64b_imx616.so
-vendor/lib/camera/com.qti.eeprom.sec2qcconversion.so
+vendor/lib64/camera/com.qti.tuned.default.bin
 vendor/lib/camera/com.samsung.sensor.imx616.so
 vendor/lib/camera/com.samsung.ois.mcu_stm32g.so
-vendor/lib64/camera/com.samsung.sensormodule.1_0_lsi_s5kgd2.bin
 vendor/lib64/camera/t_t10_dual_calibration.bin
-vendor/lib64/camera/com.samsung.tuned.lsi_s5k3l6.bin
-vendor/lib64/camera/com.samsung.sensormodule.13_0_lsi_s5kgd2_full.bin
 vendor/lib64/camera/com.qti.eeprom.truly_cmb433.so
 vendor/lib64/camera/com.qti.eeprom.irs2381c_polar.so
 vendor/lib64/camera/uw_dual_calibration.bin
-vendor/lib64/camera/com.samsung.sensormodule.2_lsi_s5k3l6.bin
-vendor/lib64/camera/com.samsung.sensor.s5kgd2.so
-vendor/lib64/camera/com.samsung.sensor.gc5035.so
 vendor/lib64/camera/f_dual_calibration.bin
 vendor/lib64/camera/components/com.qti.stats.pdlibsony.so
 vendor/lib64/camera/components/com.samsung.node.uniplugin_vdis.so
@@ -157,12 +146,10 @@ vendor/lib64/camera/components/com.ss.stats.pdlib.so
 vendor/lib64/camera/components/com.qti.stats.pdlib.so
 vendor/lib64/camera/components/com.qti.node.stich.so
 vendor/lib64/camera/components/com.samsung.node.capture_fusion.so
-vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
 vendor/lib64/camera/components/com.qti.node.sbi.so
 vendor/lib64/camera/components/com.samsung.node.smooth_transition.so
 vendor/lib64/camera/components/com.qti.stats.afd.so
 vendor/lib64/camera/components/com.qti.node.swpreprocess.so
-vendor/lib64/camera/components/com.qti.stats.hafoverride.so
 vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so
 vendor/lib64/camera/components/com.qti.hvx.addconstant.so
 vendor/lib64/camera/components/com.qti.stats.haf.so
@@ -172,7 +159,6 @@ vendor/lib64/camera/components/com.qti.node.memcpy.so
 vendor/lib64/camera/components/com.qti.stats.awbwrapper.so
 vendor/lib64/camera/components/com.qti.node.swcac.so
 vendor/lib64/camera/components/com.qti.node.dummyrtb.so
-vendor/lib64/camera/components/com.qtistatic.stats.af.so
 vendor/lib64/camera/components/com.qti.stats.awb.so
 vendor/lib64/camera/components/com.qti.eisv3.so
 vendor/lib64/camera/components/com.qti.node.swmfnr.so
@@ -183,33 +169,13 @@ vendor/lib64/camera/components/com.ss.stats.awb.so
 vendor/lib64/camera/components/com.samsung.node.uniplugin_recording.so
 vendor/lib64/camera/components/com.samsung.node.uniplugin_preview.so
 vendor/lib64/camera/components/com.qti.node.gpu.so
-vendor/lib64/camera/com.samsung.tuned.lsi_gc5035.bin
-vendor/lib64/camera/com.samsung.sensormodule.4_lsi_gc5035_macro.bin
-vendor/lib64/camera/com.samsung.sensor.s5kgw1p.so
-vendor/lib64/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1p_otp.bin
-vendor/lib64/camera/com.samsung.sensormodule.0_0_lsi_s5kgw1p.bin
-vendor/lib64/camera/com.samsung.sensor.gc5035_macro.so
-vendor/lib64/camera/com.samsung.sensormodule.0_1_sony_imx682.bin
-vendor/lib64/camera/com.samsung.sensormodule.1_1_sony_imx616.bin
-vendor/lib64/camera/com.samsung.tuned.lsi_s5kgd2.bin
-vendor/lib64/camera/com.samsung.sensormodule.13_0_lsi_s5kgd2_full_otp.bin
-vendor/lib64/camera/com.samsung.sensormodule.3_lsi_gc5035.bin
 vendor/lib64/camera/com.samsung.sensor.s5k3l6.so
-vendor/lib64/camera/com.samsung.sensormodule.13_1_sony_imx616_full.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/camera/com.samsung.sensormodule.1_0_lsi_s5kgd2_otp.bin
 vendor/lib64/camera/com.samsung.tuned.sony_imx616.bin
-vendor/lib64/camera/com.samsung.tuned.lsi_gc5035_macro.bin
-vendor/lib64/camera/com.samsung.sensor.imx682.so
-vendor/lib64/camera/com.samsung.tuned.sony_imx682.bin
-vendor/lib64/camera/com.samsung.tuned.lsi_s5kgw1p.bin
-vendor/lib64/camera/com.qti.eeprom.n24s64b_imx616.so
 vendor/lib64/camera/w_dual_calibration.bin
 vendor/lib64/camera/com.qti.eeprom.sec2qcconversion.so
 vendor/lib64/camera/com.samsung.sensor.imx616.so
 vendor/lib64/camera/com.samsung.ois.mcu_stm32g.so
-vendor/lib/com.qti.feature2.gs.kodiak.so
-vendor/lib64/com.qti.feature2.gs.kodiak.so
 vendor/lib/com.qti.feature2.rt.so
 vendor/lib64/com.qti.feature2.rt.so
 vendor/lib/com.qti.feature2.anchorsync.so
@@ -280,72 +246,24 @@ vendor/lib/libgf_in_system_lib.so
 vendor/lib64/libgf_in_system_lib.so
 
 # Graphics
-vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3FC3_AMS646YD01_LO_FHD.xml
+vendor/etc/qdcm_calib_data_ss_dsi_panel_EA8082_AMB641ZR01_FHD.xml
+vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3FC3_AMB641ZR02_FHD.xml
 
 # Sensors
 vendor/lib/sensors.grip.so
 vendor/lib/sensors.ssc.so
 vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.ssc.so
-vendor/etc/sensors/config/kodiak_ak991x_0.json
-vendor/etc/sensors/config/kodiak_lsm6dso_0.json
-vendor/etc/sensors/config/kodiak_stk31610_0.json
+vendor/etc/sensors/config/lahaina_lsm6dso_0_0.json
+vendor/etc/sensors/config/lahaina_stk3a9x_0.json
+vendor/etc/sensors/config/faroe_lps22hh_0.json
 vendor/etc/sensors/config/lsm6dso_0.json
 
 # Touchscreen firmware
-vendor/firmware/tsp_stm/fts5cu56a_a52sxq.bin
+vendor/firmware/s3908_r9_slsi.bin
+vendor/firmware/s3908_r9.bin
 
-# Wifi firmware
-vendor/firmware/qca6750/bdwlan.elf1
-vendor/firmware/qca6750/bdwlan.elf2
-vendor/firmware/qca6750/bdwlan.elf
-vendor/firmware/qca6750/bdwlan.elf10
-
-# Wifi firmware (bootloader revision 1) - from A528BXXU1DWA4 (T)
-vendor/firmware/wpss.b00|bbbf98507f63f2fbc6f04ed5328d88190de9f124
-vendor/firmware/wpss.b01|b01ec74238fb844a77f0dd0521f68f8aec295e22
-vendor/firmware/wpss.b02|01a62a6929ca782d3216a159ecfba873ccb1aa2d
-vendor/firmware/wpss.b03|662486b7c0a931f1265d0f3ca942a854943ca974
-vendor/firmware/wpss.b04|6b4e5aecb98ce669a09638db698e66a255775a8f
-vendor/firmware/wpss.b05|de0fa830b6bbf388f63b36c3b18d47d92711764e
-vendor/firmware/wpss.b06|4a527ed4dfc2be3a12cfa5c6f6cff5513bfe34d7
-vendor/firmware/wpss.b07|3413d463c82e90fe1ef15c8dc65502050265ca31
-vendor/firmware/wpss.mdt|7dd84106147f2e13e189133c5757839bba4fd680
-
-# Wifi firmware (bootloader revision 1) - from A528NKSS1DWA1 (T)
-vendor/firmware/wlan/a528n/rev1/wpss.b01|b9dcd9ce2fa81563f9f93ed3b5cf414cf640a6b7
-vendor/firmware/wlan/a528n/rev1/wpss.mdt|20dbdadc5304730938e1ac127e9a9b2e0ba5e032
-
-# Wifi firmware (bootloader revision 2) - from A528BXXU2EWC1 (T)
-vendor/firmware/wlan/a528b/rev2/wpss.b00|ec9771fe39350cc2ff27c36e5fdb7f8f0ca4aeb3
-vendor/firmware/wlan/a528b/rev2/wpss.b01|3b5c6e0b4ded8456999a4fb03fd0c60fc0b067ce
-vendor/firmware/wlan/a528b/rev2/wpss.b02|1d01914176991452ba141f762ab9b7b32774ab9e
-vendor/firmware/wlan/a528b/rev2/wpss.b03|ac543c537d6779ca5ba08bb6c01fea1aca9d5053
-vendor/firmware/wlan/a528b/rev2/wpss.b04|6cf9481034d98db6d5e2d283f24f7f69f62a4cd9
-vendor/firmware/wlan/a528b/rev2/wpss.b05|4921bc0a7acc43180097eeba29a8e21bbf6270cc
-vendor/firmware/wlan/a528b/rev2/wpss.b06|aa2cdff7b662830ecc28261eb963ea5d78a06842
-vendor/firmware/wlan/a528b/rev2/wpss.b07|ccd078161284175e6ea66ba1314e79707894ea84
-vendor/firmware/wlan/a528b/rev2/wpss.mdt|955e96de1082c77a0c28d8660f5e8c10a394b6b3
-
-# Wifi firmware (bootloader revision 3) - from A528BXXU3EWC6 (T)
-vendor/firmware/wlan/a528b/rev3/wpss.b01|1dc2cfa9983acea0c06b761d64b77cbe9baee4ca
-vendor/firmware/wlan/a528b/rev3/wpss.mdt|d131a35f69dc2a780fa468c2b378bd187ecba2d8
-
-# Wifi firmware (bootloader revision 4) - from A528BXXS4EWE5 (T)
-vendor/firmware/wlan/a528b/rev4/wpss.b01|fc33353016da2b398177529eae250c25c5621b08
-vendor/firmware/wlan/a528b/rev4/wpss.mdt|b6e759833f00852e8e4ab93cc59b854eef19c529
-
-# Wifi firmware (bootloader revision 2) - from A528NKSU2EWB4 (T)
-vendor/firmware/wlan/a528n/rev2/wpss.b01|32cb22661c41b72a598f04be119e99890b09af0c
-vendor/firmware/wlan/a528n/rev2/wpss.mdt|10dce042a9c55e6ea5c21a554f2fac10d06286b1
-
-# Wifi firmware (bootloader revision 5) - from A528BXXS5EWH4 (T)
-vendor/firmware/wlan/a528b/rev5/wpss.b00|6e49240887c3130b534baa1fac897a797f895b15
-vendor/firmware/wlan/a528b/rev5/wpss.b01|517c1ea120c08ce61359d8a0de76d8047004702c
-vendor/firmware/wlan/a528b/rev5/wpss.b02|4454971055ff504f84cf2f953aeab17af9818fcb
-vendor/firmware/wlan/a528b/rev5/wpss.b03|bbaec8a5d9a417b666c97b36fd00ed307f9ee191
-vendor/firmware/wlan/a528b/rev5/wpss.b04|31805d7a4d43d5f5bdbc6de0d81729885e1c6b1d
-vendor/firmware/wlan/a528b/rev5/wpss.b05|1a7a508c2d447ab3ac122a4e9c08ac41ce204a97
-vendor/firmware/wlan/a528b/rev5/wpss.b06|5a8550f4952ac9ffa8d10280a70e92770a1d41a6
-vendor/firmware/wlan/a528b/rev5/wpss.b07|ca58a5af6afcd88b0acca60d9c1da7e994b4e8a8
-vendor/firmware/wlan/a528b/rev5/wpss.mdt|b217d9f3c9df4d75bd0ffcba2d25062090dd4463
+# Wifi Firmware
+vendor/firmware/bcmdhd_clm.blob
+vendor/firmware/nvram.txt_1rh_es43_b1
+vendor/firmware/nvram.txt_CS01_semco_b1

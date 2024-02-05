@@ -24,11 +24,13 @@ RECOVERY_KMOD_TARGETS := \
     sec_tclm_v2.ko \
     sec_tsp_dumpkey.ko \
     sec_tsp_log.ko \
-    stm_ts.ko
+    slsi_ts.ko \
+    synaptics_ts.ko
 
 RECOVERY_FIRMWARE_TARGETS := \
-    fts5cu56a_a52sxq.bin
-
+    s3908_r9.bin \
+    s3908_r9_slsi.bin
+    
 INSTALLED_RECOVERY_KMOD_TARGETS := $(RECOVERY_KMOD_TARGETS:%=$(TARGET_RECOVERY_ROOT_OUT)/vendor/lib/modules/%)
 $(INSTALLED_RECOVERY_KMOD_TARGETS): $(INSTALLED_KERNEL_TARGET)
 	echo -e ${CL_GRN}"Copying kernel modules to recovery"${CL_RST}

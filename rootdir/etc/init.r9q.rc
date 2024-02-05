@@ -57,13 +57,26 @@ on init
     chmod 0644 /dev/freezer/thaw/tasks
     chmod 0644 /dev/freezer/thaw/cgroup.procs
 
+# R9Q Thermal Feature
+    write /proc/sys/kernel/sched_conservative_pl 1
+
+on post-fs-data
+# Samsung Pay
+    mkdir /efs/pfw_data 0760 vendor_spay vendor_spay
+
+# MST/NFC Switch
+    chown vendor_spay system /dev/mst_ctrl
+    chmod 0660 /dev/mst_ctrl
+
 # Create carrier folder for HiddenMenu
 on post-fs
     mkdir /efs/carrier 0755 radio system
+    chown radio system /efs/carrier
+    chown radio system /efs/carrier/HiddenMenu
 
-on post-fs-data
-# MST/NFC Switch
-    chmod 0660 /dev/mst_ctrl
+#mAFPC
+	mkdir /efs/afc 0760 system system
+    exec - system system -- /system/bin/mafpc_write
 
 on init
 # setup cgroup freezer for freecess
@@ -124,10 +137,27 @@ on boot
     chmod 0664 /dev/cpuset/moderate/tasks
     chmod 0664 /dev/cpuset/moderate/cpus
 
+#Performance
+    chown root system /dev/cpuset/restricted/cpus
+    chmod 0664 /dev/cpuset/restricted/cpus
+    write /dev/cpuset/restricted/cpus 0-7
+    chown root system /sys/class/kgsl/kgsl-3d0/min_pwrlevel
+    chown root system /sys/class/kgsl/kgsl-3d0/max_pwrlevel
+    chown root system /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/min_pwrlevel
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/max_pwrlevel
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies
+
+
+# usb usb_data_enabled
+    chown root system /sys/class/usb_notify/usb_control/usb_data_enabled
+    chmod 0664 /sys/class/usb_notify/usb_control/usb_data_enabled
+
 # SWAP
 on boot
-    write /proc/sys/vm/swappiness 130
+    write /proc/sys/vm/swappiness 160
     write /proc/sys/vm/page-cluster 0
+    write /sys/module/zram/parameters/zram_balance_ratio 30
 
 # Pageboostd
 on property:sys.boot_completed=1
@@ -154,7 +184,17 @@ service heimdalld /system/bin/heimdalld
     oneshot
 
 # SSU (Samsung SIM Unlock)
-on property:ro.boot.carrierid=MXO
+on property:ro.boot.carrierid=CCT
+    setprop ssu.support 1
+on property:ro.boot.carrierid=USC
+    setprop ssu.support 1
+on property:ro.boot.carrierid=VZW
+    setprop ssu.support 1
+on property:ro.boot.carrierid=XAU
+    setprop ssu.support 1
+on property:ro.boot.carrierid=DSH
+    setprop ssu.support 1
+on property:ro.boot.carrierid=AIO
     setprop ssu.support 1
 
 # some priv-apps of SPR bind mount to TMB priv-apps
@@ -170,6 +210,41 @@ on post-fs-data && property:ro.csc.sales_code=TMB
     mount none /mnt/temp/priv-app/SprintHub /system/carrier/priv-app/SprintHub bind
     umount /mnt/temp
     rmdir /mnt/temp
-
-on property:sys.sysctl.zram_balance_ratio=*
-    write /sys/module/zram/parameters/zram_balance_ratio ${sys.sysctl.zram_balance_ratio}
+	
+# some priv-apps of SPR bind mount to ASR priv-apps
+on post-fs-data && property:ro.csc.sales_code=ASR
+    umount /system/carrier
+    mkdir /mnt/temp
+    mount none /system/carrier/SPR /mnt/temp bind
+    mount none /system/carrier/ASR /system/carrier bind
+    mount none /mnt/temp/priv-app/MobileID /system/carrier/priv-app/MobileID bind
+    mount none /mnt/temp/priv-app/CarrierDeviceManager /system/carrier/priv-app/CarrierDeviceManager bind
+    mount none /mnt/temp/priv-app/MobileInstaller /system/carrier/priv-app/MobileInstaller bind
+    mount none /mnt/temp/priv-app/SprintAndroidExtension2 /system/carrier/priv-app/SprintAndroidExtension2 bind
+    mount none /mnt/temp/priv-app/SprintHub /system/carrier/priv-app/SprintHub bind
+    umount /mnt/temp
+    rmdir /mnt/temp
+	
+# some priv-apps of SPR bind mount to TMK priv-apps
+on post-fs-data && property:ro.csc.sales_code=TMK
+    umount /system/carrier
+    mkdir /mnt/temp
+    mount none /system/carrier/SPR /mnt/temp bind
+    mount none /system/carrier/TMK /system/carrier bind
+    mount none /mnt/temp/priv-app/MobileID /system/carrier/priv-app/MobileID bind
+    mount none /mnt/temp/priv-app/CarrierDeviceManager /system/carrier/priv-app/CarrierDeviceManager bind
+    mount none /mnt/temp/priv-app/MobileInstaller /system/carrier/priv-app/MobileInstaller bind
+    mount none /mnt/temp/priv-app/SprintAndroidExtension2 /system/carrier/priv-app/SprintAndroidExtension2 bind
+    mount none /mnt/temp/priv-app/SprintHub /system/carrier/priv-app/SprintHub bind
+    umount /mnt/temp
+    rmdir /mnt/temp
+	
+# some priv-apps of DSH bind mount to DSA priv-apps
+on post-fs-data && property:ro.csc.sales_code=DSA
+    umount /system/carrier
+    mkdir /mnt/temp
+    mount none /system/carrier/DSH /mnt/temp bind
+    mount none /system/carrier/DSA /system/carrier bind
+    mount none /mnt/temp/priv-app/VisualVoicemailDsh_Stub /system/carrier/priv-app/VisualVoicemailDsh_Stub bind
+    umount /mnt/temp
+    rmdir /mnt/temp

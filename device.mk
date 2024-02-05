@@ -14,19 +14,19 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/samsung/a52sxq
+DEVICE_PATH := device/samsung/r9q
 
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
 # call the common setup
-$(call inherit-product, device/samsung/sm7325-common/common.mk)
+$(call inherit-product, device/samsung/sm8350-common/common.mk)
 
 # call the proprietary setup
-$(call inherit-product, vendor/samsung/a52sxq/a52sxq-vendor.mk)
+$(call inherit-product, vendor/samsung/r9q/r9q-vendor.mk)
 
 # Init files
 PRODUCT_PACKAGES += \
-    init.a52sxq.rc
+    init.r9q.rc
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -38,4 +38,4 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 PRODUCT_PACKAGES += \
-    sensors.a52sxq
+    sensors.r9q
