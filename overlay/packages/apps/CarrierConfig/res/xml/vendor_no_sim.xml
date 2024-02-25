@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carrier_config_list>
+    <carrier_config name="Telephony">
+        <string-array name="ratchet_rat_families" num="0" />
+        <int name="cdma_3waycall_flash_delay_int" value="0" />
+        <int name="volte_replacement_rat_int" value="0" />
+        <int name="carrier_ussd_method_int" value="1" />
+        <boolean name="carrier_name_override_bool" value="false" />
+        <string name="carrier_name_string" />
+        <boolean name="wfc_carrier_name_override_by_pnn_bool" value="false" />
+        <boolean name="wfc_spn_use_root_locale" value="true" />
+        <int name="ims_dtmf_tone_delay_int" value="300" />
+        <boolean name="vilte_data_is_metered_bool" value="false" />
+        <boolean name="disable_voice_barring_notification_bool" value="true" />
+    </carrier_config>
+</carrier_config_list>
