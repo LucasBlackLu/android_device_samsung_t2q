@@ -2,7 +2,7 @@ DEVICE_PATH := device/samsung/t2q
 BOARD_VENDOR := samsung
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2023-11-01
+VENDOR_SECURITY_PATCH := 2024-02-01
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
