@@ -40,5 +40,8 @@ TARGET_MODULE_ALIASES += wlan.ko:qca_cld3_wlan.ko
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := t2q
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # Security patch
 VENDOR_SECURITY_PATCH := 2024-11-01
