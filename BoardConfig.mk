@@ -16,5 +16,8 @@ TARGET_SCREEN_DENSITY := 450
 TARGET_KERNEL_CONFIG        := vendor/t2q_chn_hkx_defconfig
 BOARD_NAME                  := SRPTI01B007
 
+# Kernel modules
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
+
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := t2q
