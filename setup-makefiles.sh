@@ -9,12 +9,12 @@
 # If we're being sourced by the common script that we called,
 # stop right here. No need to go down the rabbit hole.
 if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
-    return
+	return
 fi
 
 set -e
 
-export DEVICE=r9q
+export DEVICE=t2q
 export DEVICE_COMMON=sm8350-common
 export VENDOR=samsung
 

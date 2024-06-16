@@ -1,5 +1,5 @@
 cc_library_static {
-    name: "libudfps_extension.r9q",
+    name: "libudfps_extension.t2q",
     srcs: ["UdfpsExtension.cpp"],
     include_dirs: [
         "frameworks/native/services/surfaceflinger/CompositionEngine/include"
