@@ -30,6 +30,9 @@ BOARD_BOOT_HEADER_VERSION := 3
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_CONFIG        := t2q_defconfig
 
+# Kernel modules
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
+
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := t2q
 
