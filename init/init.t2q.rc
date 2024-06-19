@@ -67,6 +67,7 @@ on boot
     chmod 0664 /sys/class/usb_notify/usb_control/usb_data_enabled
 
 on post-fs-data
+
 # MST/NFC Switch
     chown system /dev/mst_ctrl
     chmod 0660 /dev/mst_ctrl
