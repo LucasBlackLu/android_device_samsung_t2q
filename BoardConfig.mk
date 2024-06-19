@@ -29,3 +29,6 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
+# Security patch
+VENDOR_SECURITY_PATCH := 2023-12-01
