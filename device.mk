@@ -16,8 +16,6 @@
 
 DEVICE_PATH := device/samsung/t2q
 
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
-
 # call the common setup
 $(call inherit-product, device/samsung/sm8350-common/common.mk)
 
@@ -28,3 +26,6 @@ $(call inherit-product, vendor/samsung/t2q/t2q-vendor.mk)
 PRODUCT_PACKAGES += \
     init.t2q.rc
 
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResT2q
