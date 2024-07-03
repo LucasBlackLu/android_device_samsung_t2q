@@ -371,9 +371,6 @@ vendor/lib64/libgf_in_system_lib.so
 vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3FAB_AMB667XU01_FHD.xml
 
 # NFC
-vendor/bin/hw/nxp.android.hardware.nfc@1.2-service
-vendor/etc/init/nxp.android.hardware.nfc@1.2-service.rc
--vendor/etc/vintf/manifest/nxp.android.hardware.nfc@1.2-service.xml
 vendor/etc/nfc/libnfc-nxp_RF.conf
 vendor/etc/libnfc-nxp.conf
 vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
