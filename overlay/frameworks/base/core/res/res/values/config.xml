@@ -70,4 +70,7 @@
           <item>250,40</item>
           <item>255,39</item>
     </string-array>
+
+    <!-- Screen off UDFPS -->
+    <bool name="config_supportScreenOffUdfps">true</bool>
 </resources>

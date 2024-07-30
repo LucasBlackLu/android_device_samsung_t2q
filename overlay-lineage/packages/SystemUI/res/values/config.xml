@@ -1,0 +1,14 @@
+<!--
+/*
+ * Copyright (C) 2024 The LineageOS Project
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+-->
+
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds. -->
+<resources>
+    <!-- Udfps vendor code -->
+    <integer name="config_udfps_vendor_code">455</integer>
+</resources>
