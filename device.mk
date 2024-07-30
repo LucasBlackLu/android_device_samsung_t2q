@@ -30,6 +30,9 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/nfc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
     $(DEVICE_PATH)/configs/nfc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
 
+# Fingerprint
+TARGET_HAS_UDFPS := true
+
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
