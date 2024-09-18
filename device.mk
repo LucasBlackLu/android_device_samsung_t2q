@@ -9,7 +9,9 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResT2q
+    FrameworksResT2q \
+    SystemUIResT2q
+
 
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/samsung/sm8350-common/common.mk)
