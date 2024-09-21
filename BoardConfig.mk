@@ -18,6 +18,8 @@ DEVICE_PATH := device/samsung/t2q
 
 include device/samsung/sm8350-common/BoardConfigCommon.mk
 
+BOARD_NAME                  := SRPTI01B007
+
 # Display
 TARGET_SCREEN_DENSITY := 450
 
