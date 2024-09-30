@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_t2q.mk
+    $(LOCAL_DIR)/derp_t2q.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_t2q-user \
-    lineage_t2q-userdebug \
-    lineage_t2q-eng
+    derp_t2q-user \
+    derp_t2q-userdebug \
+    derp_t2q-eng
