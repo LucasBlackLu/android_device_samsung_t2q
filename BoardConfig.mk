@@ -24,7 +24,7 @@ BOARD_NAME                  := SRPTI01B007
 TARGET_SCREEN_DENSITY := 450
 
 # Kernel
-TARGET_KERNEL_CONFIG        := vendor/t2q_chn_hkx_defconfig
+TARGET_KERNEL_CONFIG        := t2q_defconfig
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist
