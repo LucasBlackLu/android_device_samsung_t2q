@@ -34,6 +34,8 @@ blob_fixups: blob_fixups_user_type = {
      ('vendor/lib/libscaler_hw.unifunc.so', 'vendor/lib64/libscaler_hw.unifunc.so', 'vendor/lib/unihal_android.so', 'vendor/lib64/unihal_android.so'): blob_fixup()
         .add_needed('libshim_sensorndkbridge.so')
         .add_needed('libui_shim.so'),
+     ('vendor/lib64/nfc_nci_nxpsn.so', 'vendor/lib64/ese_spi_nxp.so'): blob_fixup()
+        .add_needed('libbase_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
