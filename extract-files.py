@@ -31,6 +31,8 @@ namespace_imports = [
 blob_fixups: blob_fixups_user_type = {
      ('vendor/lib/hw/com.qti.chi.override.so', 'vendor/lib64/hw/com.qti.chi.override.so'): blob_fixup()
         .binary_regex_replace(b'ro.boot.flash.locked', b'ro.camera.notify_nfc'),
+     ('vendor/lib64/nfc_nci_nxpsn.so', 'vendor/lib64/ese_spi_nxp.so'): blob_fixup()
+        .add_needed('libbase_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
