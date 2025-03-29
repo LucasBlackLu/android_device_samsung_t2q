@@ -15,7 +15,7 @@
 #
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/a52sxq/device.mk)
+$(call inherit-product, device/samsung/t2q/device.mk)
 
 # Inherit from the 64 bit configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
@@ -37,15 +37,17 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_HAVE_SEC_NFC := true
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_a52sxq
-PRODUCT_DEVICE := a52sxq
+PRODUCT_NAME := lineage_t2q
+PRODUCT_DEVICE := t2q
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-A528B
+PRODUCT_MODEL := SM-9960
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+
 # Vendor fingerprint
-BUILD_FINGERPRINT := "samsung/a52sxqxx/a52sxq:11/RP1A.200720.012/A528BXXS8GXF5:user/release-keys"
-PRIVATE_BUILD_DESC := "a52sxqxx-user 11 RP1A.200720.012 A528BXXS8GXF5 release-keys"
+BUILD_FINGERPRINT := samsung/t2qzhx/qssi:14/UP1A.231005.007/G9960ZHSBGXJ4:user/release-keys
+PRIVATE_BUILD_DESC="t2qzhx-user 14 UP1A.231005.007 G9960ZHSBGXJ4 release-keys"
