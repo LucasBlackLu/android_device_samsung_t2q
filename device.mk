@@ -21,5 +21,9 @@ $(call inherit-product, device/samsung/sm6375-common/common.mk)
 PRODUCT_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
 
+# Soong Namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH) \
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/a23xq/a23xq-vendor.mk)
