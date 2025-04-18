@@ -201,6 +201,9 @@ vendor/lib64/libsynaFpSensorTestNwd.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # NFC
+vendor/bin/hw/android.hardware.nfc@1.2-service-st
+vendor/etc/init/android.hardware.nfc@1.2-service-st.rc
+vendor/etc/vintf/manifest/st.android.hardware.nfc@1.2-service.xml
 vendor/lib64/nfc_nci.st21nfc.st.so
 vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
 
