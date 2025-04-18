@@ -18,6 +18,10 @@ TARGET_SCREEN_WIDTH := 1080
 $(call inherit-product, device/samsung/sm6375-common/common.mk)
 
 # NFC
+PRODUCT_PACKAGES += \
+    init.a23xq.rc \
+    init.nfc.samsung.rc \
+    
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/nfc/nfc/st21nfc_conf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/st21nfc_conf.txt \
     $(DEVICE_PATH)/configs/nfc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \

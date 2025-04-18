@@ -1,0 +1,20 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Ramdisk's Hw
+
+prebuilt_etc {
+    name: "init.a23xq.rc",
+    src: "init.a23xq.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.nfc.samsung.rc",
+    src: "init.nfc.samsung.rc",
+    sub_dir: "init/",
+    vendor: true,
+}
