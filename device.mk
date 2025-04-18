@@ -17,6 +17,15 @@ TARGET_SCREEN_WIDTH := 1080
 # Inherit Common Device Tree
 $(call inherit-product, device/samsung/sm6375-common/common.mk)
 
+# NFC
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/nfc/nfc/st21nfc_conf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/st21nfc_conf.txt \
+    $(DEVICE_PATH)/configs/nfc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
+    $(DEVICE_PATH)/configs/nfc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
+    $(DEVICE_PATH)/configs/nfc/libnfc-mtp-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100_38_4MHZ.conf \
+    $(DEVICE_PATH)/configs/nfc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
+    $(DEVICE_PATH)/configs/nfc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
+
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
