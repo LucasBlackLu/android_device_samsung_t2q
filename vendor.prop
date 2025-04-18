@@ -1,0 +1,4 @@
+# Fingerprint
+ro.vendor.fingerprint.type=side
+ro.vendor.fingerprint.supports_gestures=true
+ro.vendor.fingerprint.sensor_location=1080|820|350
