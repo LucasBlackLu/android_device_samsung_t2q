@@ -6,8 +6,8 @@
 // Ramdisk's Hw
 
 prebuilt_etc {
-    name: "init.a23xq.rc",
-    src: "init.a23xq.rc",
+    name: "init.t2q.rc",
+    src: "init.t2q.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
