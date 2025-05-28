@@ -82,7 +82,6 @@ tuner-simple.ko
 tuner-types.ko
 tuner-xc2028.ko
 tx_macro_dlkm.ko
-uwb.ko
 va_macro_dlkm.ko
 wcd9xxx_dlkm.ko
 wcd_core_dlkm.ko
