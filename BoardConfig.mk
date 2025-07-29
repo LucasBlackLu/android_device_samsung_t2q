@@ -15,6 +15,8 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_BOARD_NAME := SRPTI01B007 
 
 # FOD
+$(call soong_config_set,samsung_udfps,udfps_zorder,0x20000000u)
+
 TARGET_USES_FOD_ZPOS := true
 
 # Kernel
