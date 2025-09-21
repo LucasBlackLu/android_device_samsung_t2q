@@ -23,6 +23,14 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.samsung
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2.vendor \
+    com.android.nfc_extras \
+    libchrome \
+    libchrome.vendor \
+    Tag
+
 # Overlays 
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
