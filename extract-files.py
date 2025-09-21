@@ -32,6 +32,7 @@ blob_fixups: blob_fixups_user_type = {
      ('vendor/lib/hw/com.qti.chi.override.so', 'vendor/lib64/hw/com.qti.chi.override.so'): blob_fixup()
         .binary_regex_replace(b'ro.boot.flash.locked', b'ro.camera.notify_nfc'),
      ('vendor/lib/libscaler_hw.unifunc.so', 'vendor/lib64/libscaler_hw.unifunc.so', 'vendor/lib/unihal_android.so', 'vendor/lib64/unihal_android.so'): blob_fixup()
+        .add_needed('libshim_sensorndkbridge.so')
         .add_needed('libui_shim.so'),
 }  # fmt: skip
 
