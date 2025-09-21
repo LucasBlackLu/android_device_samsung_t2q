@@ -1,0 +1,6 @@
+prebuilt_etc {
+    name: "init.t2q.rc",
+    src: "init.t2q.rc",
+    sub_dir: "init",
+    vendor: true,
+}
