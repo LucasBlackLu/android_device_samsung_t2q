@@ -29,6 +29,8 @@ namespace_imports = [
 ]
 
 blob_fixups: blob_fixups_user_type = {
+     ('vendor/lib/hw/com.qti.chi.override.so', 'vendor/lib64/hw/com.qti.chi.override.so'): blob_fixup()
+        .binary_regex_replace(b'ro.boot.flash.locked', b'ro.camera.notify_nfc'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
