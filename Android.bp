@@ -5,3 +5,10 @@
 
 soong_namespace {
 }
+
+prebuilt_hidl_interfaces {
+    name: "st.nfc_hal_service",
+    interfaces: [
+        "vendor.samsung.hardware.nfc@2.0::ISehNfc",
+    ],
+}
