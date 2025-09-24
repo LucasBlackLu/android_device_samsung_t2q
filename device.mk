@@ -17,6 +17,10 @@ TARGET_SCREEN_WIDTH := 1080
 # Inherit Common Device Tree
 $(call inherit-product, device/samsung/sm8350-common/common.mk)
 
+# NFC
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
