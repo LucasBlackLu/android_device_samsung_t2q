@@ -14,6 +14,10 @@ PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Density mapping config
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/display/default_television.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/default_television.xml
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.samsung
