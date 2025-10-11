@@ -14,11 +14,6 @@ TARGET_OTA_ASSERT_DEVICE := t2q
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_BOARD_NAME := SRPTI01B007 
 
-# FOD
-$(call soong_config_set,samsung_udfps,udfps_zorder,0x20000000u)
-
-TARGET_USES_FOD_ZPOS := true
-
 # Kernel
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist
 BOOT_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
