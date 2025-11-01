@@ -69,6 +69,7 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
+    libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf \
     wifi_brcm.rc \
