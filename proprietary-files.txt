@@ -32,6 +32,27 @@ vendor/firmware/bcmdhd_mfg.bin_b1
 vendor/firmware/bcmdhd_mon.bin_b1
 vendor/firmware/bcmdhd_sta.bin_b1
 
+# Camera
+vendor/lib64/libofflinelog.so
+vendor/lib64/libofflinedump.so
+vendor/lib64/libuniplugin.so
+vendor/lib64/hw/camera.qcom.so
+vendor/lib64/libcamxstatscore.so
+vendor/lib64/libcamxfacialfeatures.so
+vendor/lib64/libcamxfdalgo.so
+vendor/lib64/libcamera_nn_stub.so
+vendor/lib64/libbitmlenginev2.so
+vendor/lib64/libthreadutils.so
+vendor/lib64/libos.so
+vendor/lib64/libatccore.so
+vendor/lib64/libsynx.so
+vendor/lib64/libcamxfdengine.so
+vendor/lib64/libcamxifestriping.so
+vendor/lib64/libcamximageformatutils.so
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+vendor/lib64/libchilog.so
+vendor/lib64/hw/com.qti.chi.override.so
+
 # Firmware
 vendor/firmware/cs35l40-bot-dsp1-spk-prot-calib.bin
 vendor/firmware/cs35l40-bot-dsp1-spk-prot.bin
